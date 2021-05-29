@@ -1,0 +1,48 @@
+# ワークフローの名前
+name: Release GitHub Page
+
+# 起動のタイミング
+# 今回はmasterブランチへのpush
+on:
+  push:
+    branches:
+      - master
+
+# ジョブの定義
+jobs:
+  build:
+    # 実行するインスタンス
+    runs-on: ubuntu-latest
+
+    # nodeのバージョン一覧
+    strategy:
+      matrix:
+        node-version: ['14.x']
+
+    # 各ステップの実行
+    steps:
+
+    # チェックアウト
+    - uses: actions/checkout@v1
+
+    # 使用するnodeのバージョンを指定
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    # パッケージのインストールとアプリのビルド
+    - name: install and build
+      run: |
+        npm ci
+        npm run build
+      env:
+        CI: true
+
+    # gh-pagesを使って公開
+    - name: deploy
+      uses: peaceiris/actions-gh-pages@v2
+      env:
+        ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+        PUBLISH_BRANCH: gh-pages
+        PUBLISH_DIR: ./build
