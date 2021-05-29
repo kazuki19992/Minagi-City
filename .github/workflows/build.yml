@@ -32,6 +32,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
 
     # パッケージのインストールとアプリのビルド
+    # CIも回してるっぽい(しらんけど)
     - name: install and build
       run: |
         yarn --frozen-lockfile
