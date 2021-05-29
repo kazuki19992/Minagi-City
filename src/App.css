@@ -1,0 +1,16 @@
+.App {
+  
+  /* background-color: #00aaaa; */
+}
+
+.contents-wrapper {
+  margin-top: 1em;
+  min-width: 720px;
+  max-width: 1280px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+}

@@ -1,0 +1,40 @@
+import Logo from './TopLogo.png'
+import { Link } from 'react-router-dom'
+import './Header.css'
+
+export default function Header (props) {
+
+    const logoStyle = {
+        width: 200,
+        height: 'auto'
+    }
+
+    return (
+        <div className="header">
+            <header>
+                <div>
+                    <Link to='/'>
+                        <img src={Logo} style={logoStyle} alt="水城市(みなぎ市)トップページへ" />
+                    </Link>
+                </div>
+                <div>
+                    <p>Change Language</p>
+                    <p>サイトマップ</p>
+                </div>
+            </header>
+            <div className="nav">
+                <nav className="pc-nav">
+                    <ul>
+                        <li><Link to="#">ニュース</Link></li>
+                        <li><Link to="#">手続き</Link></li>
+                        <li><Link to="#">くらし</Link></li>
+                        <li><Link to="#">福祉・育児</Link></li>
+                        <li><Link to="#">観光・文化</Link></li>
+                        <li><Link to="#">事業者の方へ</Link></li>
+                        <li><Link to="#">市政情報</Link></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    )
+}
