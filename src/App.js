@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Route} from 'react-router-dom'
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Header />
         <div className="contents-wrapper">
           <Route exact path='/' component={Top} />
