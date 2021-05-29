@@ -5,19 +5,23 @@ import './Header.css'
 export default function Header (props) {
 
     const logoStyle = {
-        width: 200,
+        width: 320,
         height: 'auto'
+    }
+
+    const headerStyle = {
+        maxWidth: '40%'
     }
 
     return (
         <div className="header">
             <header>
-                <div>
+                <div style={headerStyle}>
                     <Link to='/'>
                         <img src={Logo} style={logoStyle} alt="水城市(みなぎ市)トップページへ" />
                     </Link>
                 </div>
-                <div>
+                <div style={headerStyle}>
                     <p>Change Language</p>
                     <p>サイトマップ</p>
                 </div>
