@@ -2,6 +2,7 @@ import './ShortcutTop.css'
 import { Link } from 'react-router-dom'
 import TombIcom from './tomb.svg'
 import Wedding from './wedding.svg'
+import MinagiWhite from './Minagi-White.svg'
 
 export default function ShortcutTop (props) {
     return (
@@ -45,7 +46,7 @@ export default function ShortcutTop (props) {
 
                 <Link to="#" className="shortcutBtnLink">
                     <div className="shortcutBtn">
-                        <i class="fas fa-laptop-house fa-3x fa-fw"></i><br />
+                        <img src={MinagiWhite} height="50px"/><br />
                         <p>
                             みなぎオンライン支所
                         </p>

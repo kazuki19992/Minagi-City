@@ -1,0 +1,32 @@
+.Top-Minagi-Data-Box {
+    margin: 1em 0;
+    background: #dcefff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22);
+}
+.Top-Minagi-Data-Box .box-title {
+    font-size: 1.2em;
+    background: #5fb3f5;
+    padding: 4px;
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+.Top-Minagi-Data-Box div {
+    padding: 15px 20px;
+    margin: 0;
+}
+
+.Minagi-Symboldata {
+    color: #333;
+}
+.Minagi-Symboldata .title {
+    font-weight: bold;
+    font-size: 20px;
+}
+.Minagi-Symboldata .since {
+    font-size: 12px;
+}
+.Minagi-Symboldata .detail {
+    margin: 10px 0;
+}

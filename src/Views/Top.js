@@ -1,5 +1,7 @@
 import Emergency from "../Components/Emergency"
 import Shortcut from "../Components/ShortcutTop"
+import Carousell from "../Components/Carousell"
+import AboutMinagi from "../Components/TopAboutMinagi"
 
 import "./Top.css"
 
@@ -23,12 +25,18 @@ export default function Top (props) {
             <div className="top-content">
                 <div className="left-content">
                     <Emergency data={emergencyCovid}/>
-                </div>
-                <div className="right-content">
                     <Emergency data={emergencyWeather}/>
                 </div>
+                <div className="right-content">
+                    <Carousell />
+                </div>
             </div>
-            <Shortcut />
+            <div style={{marginTop: "10px"}}>
+                <Shortcut />
+            </div>
+            <div style={{marginTop: "10px"}}>
+                <AboutMinagi />
+            </div>
         </div>
     )
 }
