@@ -1,0 +1,69 @@
+.shortcutBox {
+    margin: 0em 0;
+    background-color: #fffbf4;
+    border: 2px solid #ee7917;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22);
+}
+.shortcutBox .shortcutBoxTitle {
+    font-size: 16px;
+    position: absolute;
+    margin-top: 0;
+    background-color: #ee7917;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 0 0 2px 0;
+    padding: 4px 6px;
+}
+.shortcutBox p {
+    margin: 0;
+    padding: 3em 1em 1em 1em;
+}
+
+.shortcutBox .shortcutBtnBox {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.shortcutBox .shortcutBtnBox .shortcutBtnLink {
+    text-decoration: none;
+    display: block;
+    width: calc(100% / 5.22);
+    text-align: center;
+    /* color: #333333; */
+    color: #fff;
+    margin: 0.25em 0.25em 0.25em 0.25em;
+}
+
+.shortcutBox .shortcutBtnBox .shortcutBtnLink .shortcutBtn {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* border: solid 2px #d27d00; */
+    border-radius: 5px;
+    background: #fd9535;
+    border-radius: 4px;
+    box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), inset 0 -2px 0 rgba(0, 0, 0, 0.05);
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22);
+}
+
+.shortcutBox .shortcutBtnBox .shortcutBtnLink .shortcutBtn:active {
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+}
+
+.shortcutBox .shortcutBtnBox .shortcutBtnLink .shortcutBtn p {
+    padding: 0;
+    margin-top: -10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.shortcutBox .shortcutBtnBox .shortcutBtnLink .shortcutBtn .subtitle {
+    margin-top: 0;
+    font-size: 10px;
+}

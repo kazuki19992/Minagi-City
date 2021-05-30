@@ -1,0 +1,10 @@
+.top-content {
+    display: flex;
+    justify-content: space-between;
+}
+.top-content .left-content {
+    width: 47.5%;
+}
+.top-content .right-content {
+    width: 47.5%;
+}
