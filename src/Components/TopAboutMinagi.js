@@ -3,6 +3,7 @@ import Minagi from './Minagi.svg'
 
 export default function AboutMinagi (props) {
     // 仮の値
+    // 気が向いたら変更します
     const human = {
         man: 135684,
         woman: 114396,
