@@ -1,0 +1,90 @@
+.footerFixed{
+    /* min-height: 100vh;
+    position: relative;
+    padding-bottom: 300px;
+    box-sizing: border-box; */
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-width: 360px;
+
+    padding-top: 20px;
+    /* background-color: #333; */
+    /* background: -moz-linear-gradient(top, rgba(0,0,0,0), #333 35%);
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0), #333 35%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0), #333 35%); */
+}
+
+.contentsWrapper {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contentsWrapper .container1 {
+    display: flex;
+    align-items: center;
+}
+
+.contentsWrapper .container1 .footerImg {
+    height: 120px;
+}
+
+.contentsWrapper .container1 .container2 {
+    margin-left: 10px;
+}
+
+.contentsWrapper .container1 .container2 p {
+    /* color: #fff; */
+    color: #333;
+    font-size: 15px;
+}
+
+.contentsWrapper .container1 .container2 .cityName {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.container3 {
+    background-color: #0050BE;
+}
+
+.container4 {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container4 .footerLink1 {
+    color: #ffffff;
+    display: block;
+    text-decoration: none;
+}
+
+.container4 .footerLink1::before {
+    color: #ffffff;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    display: inline-block;
+    margin-right: .5em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f105"
+}
+
+.copyrightSection {
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+}
+
