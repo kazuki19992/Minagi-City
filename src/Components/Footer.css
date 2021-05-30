@@ -3,11 +3,12 @@
     position: relative;
     padding-bottom: 300px;
     box-sizing: border-box; */
+    margin-top: auto;
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
+    /* position: absolute;
+    bottom: 0; */
     width: 100%;
     min-width: 360px;
 

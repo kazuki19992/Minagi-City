@@ -15,17 +15,19 @@ export default function Header (props) {
 
     return (
         <div className="header">
-            <header>
-                <div style={headerStyle}>
-                    <Link to='/'>
-                        <img src={Logo} style={logoStyle} alt="水城市(みなぎ市)トップページへ" />
-                    </Link>
-                </div>
-                <div style={headerStyle}>
-                    <p>Change Language</p>
-                    <p>サイトマップ</p>
-                </div>
-            </header>
+            <div style={{backgroundColor: '#fff'}}>
+                <header>
+                    <div style={headerStyle}>
+                        <Link to='/'>
+                            <img src={Logo} style={logoStyle} alt="水城市(みなぎ市)トップページへ" />
+                        </Link>
+                    </div>
+                    <div style={headerStyle}>
+                        <p>Change Language</p>
+                        <p>サイトマップ</p>
+                    </div>
+                </header>
+            </div>
             <div className="nav">
                 <nav className="pc-nav">
                     <ul>

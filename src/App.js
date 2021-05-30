@@ -11,10 +11,12 @@ function App() {
     <div className="App">
       <Router basename={process.env.PUBLIC_URL}>
         <Header />
-        <div className="contents-wrapper">
-          <Route exact path='/' component={Top} />
+        <div className="app-container">
+          <div className="contents-wrapper">
+            <Route exact path='/' component={Top} />
+          </div>
+          <Footer />
         </div>
-        <Footer />
       </Router>
     </div>
   );

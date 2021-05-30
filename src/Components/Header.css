@@ -2,9 +2,10 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding: 1rem 0;
+    /* padding: 1rem 0; */
     height: 200px;
     position: fixed;
+    z-index: 9999;
 }
 
 header {
@@ -14,6 +15,7 @@ header {
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
+    background-color: #fff;
 }
 
 header .nav .pc-nav {

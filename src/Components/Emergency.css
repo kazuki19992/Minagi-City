@@ -1,0 +1,52 @@
+/* 気象警報 */
+.weather-warning-wrapper {
+    margin: 0 0 1em 0;
+    background: #ffebe9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22);
+}
+
+.weather-warning-wrapper .title {
+    font-size: 15pt;
+    background: #ff7d6e;
+    padding: 5px 10px;
+    text-align: left;
+    color: #FFF;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
+.weather-warning-wrapper .contents {
+    padding: 10px;
+    color: #980f00
+}
+
+.weather-warning-wrapper .contents .warnList{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.weather-warning-wrapper .contents .warnList .weatherListCell{
+    margin-top: 5px;
+    margin-right: 5px;
+    list-style-type: none;
+    padding: 2px 10px;
+    font-weight: bold;
+}
+
+.weather-warning-wrapper .contents .warnList .CellCritical {
+    color: #fff;
+    background-color: #4a00de;
+}
+.weather-warning-wrapper .contents .warnList .CellAlarm {
+    color: #fff;
+    background-color: #de0055;
+}
+.weather-warning-wrapper .contents .warnList .CellWarning {
+    color: #000;
+    background-color: #ffee2e;
+    border: 1px solid #b8a900;
+}
+
+.weather-warning-wrapper .contents .msg {
+    font-weight: bold;
+}

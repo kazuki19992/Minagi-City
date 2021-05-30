@@ -1,0 +1,27 @@
+.top-content {
+    display: flex;
+    justify-content: space-between;
+}
+.top-content .left-content {
+    width: 47.5%;
+}
+.top-content .right-content {
+    width: 47.5%;
+}
+
+.sectionHeader {
+    color: #333;
+    position: relative;
+    padding: 1.5rem;
+    text-align: center;
+}
+.sectionHeader:before {
+    position: absolute;
+    bottom: 0px;
+    left: calc(50% - 30px);
+    width: 60px;
+    height: 5px;
+    content: '';
+    border-radius: 3px;
+    background: #02BE50;
+}
