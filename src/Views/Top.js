@@ -5,6 +5,7 @@ import AboutMinagi from "../Components/TopAboutMinagi"
 
 import picLink1 from "../Components/img/link1.png"
 import picLink2 from "../Components/img/link2.png"
+import picLink3 from "../Components/img/link3.png"
 
 import { Link } from 'react-router-dom'
 
@@ -45,6 +46,7 @@ export default function Top (props) {
                     <div className="topLinkBox" >
                         <Link to="#"><img src={picLink1} className="banner" /></Link>
                         <Link to="#"><img src={picLink2} className="banner" /></Link>
+                        <Link to="#"><img src={picLink3} className="banner" /></Link>
                     </div>
                 </div>
                 <div style={{width: '80%', marginLeft: 10}}>
