@@ -62,17 +62,17 @@ export default function Top (props) {
 
                         <div class="tab_content" id="top-news-latest_content">
                             <div class="tab_content_description">
-                                <p class="c-txtsp">総合の内容がここに入ります</p>
+                                <p class="c-txtsp">コンテンツはありません</p>
                             </div>
                         </div>
                         <div class="tab_content" id="top-news-pv_content">
                             <div class="tab_content_description">
-                                <p class="c-txtsp">プログラミングの内容がここに入ります</p>
+                                <p class="c-txtsp">よく見られているページはありません</p>
                             </div>
                         </div>
                         <div class="tab_content" id="top-news-recruit_content">
                             <div class="tab_content_description">
-                                <p class="c-txtsp">デザインの内容がここに入ります</p>
+                                <p class="c-txtsp">募集情報はありません</p>
                             </div>
                         </div>
                     </div>
