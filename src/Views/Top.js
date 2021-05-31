@@ -26,7 +26,7 @@ export default function Top (props) {
     const emergencyWeather = {
         mode: "weather",
         title: "気象警報/注意報",
-        detail: ["大雨特別警報", "土砂災害警戒情報", "竜巻注意情報", "洪水警報", "雷注意報", "高潮注意報"]
+        detail: ["雷"]
     }
     return (
         <div>
