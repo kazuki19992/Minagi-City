@@ -3,6 +3,11 @@ import Shortcut from "../Components/ShortcutTop"
 import Carousell from "../Components/Carousell"
 import AboutMinagi from "../Components/TopAboutMinagi"
 
+import picLink1 from "../Components/img/link1.png"
+import picLink2 from "../Components/img/link2.png"
+
+import { Link } from 'react-router-dom'
+
 import "./Top.css"
 
 
@@ -34,8 +39,45 @@ export default function Top (props) {
             <div style={{marginTop: "10px"}}>
                 <Shortcut />
             </div>
-            <div style={{marginTop: "10px"}}>
-                <AboutMinagi />
+            <div style={{marginTop: "10px", display: "flex"}}>
+                <div style={{maxWidth: '500px', width: '20%'}}>
+                    <h2 className="sectionHeader">リンク集</h2>
+                    <div className="topLinkBox" >
+                        <Link to="#"><img src={picLink1} className="banner" /></Link>
+                        <Link to="#"><img src={picLink2} className="banner" /></Link>
+                    </div>
+                </div>
+                <div style={{width: '80%', marginLeft: 10}}>
+                    {/* トピックス */}
+                    <h2 className="sectionHeader">トピックス</h2>
+                    <div className="top-newsbox">
+                        <input id="top-news-latest" type="radio" name="tab_item" checked />
+                        <label class="tab_item" for="top-news-latest">最新のトピックス</label>
+                        <input id="top-news-pv" type="radio" name="tab_item" />
+                        <label class="tab_item" for="top-news-pv">よく見られているページ</label>
+                        <input id="top-news-recruit" type="radio" name="tab_item" />
+                        <label class="tab_item" for="top-news-recruit">募集情報</label>
+
+                        <div class="tab_content" id="top-news-latest_content">
+                            <div class="tab_content_description">
+                                <p class="c-txtsp">総合の内容がここに入ります</p>
+                            </div>
+                        </div>
+                        <div class="tab_content" id="top-news-pv_content">
+                            <div class="tab_content_description">
+                                <p class="c-txtsp">プログラミングの内容がここに入ります</p>
+                            </div>
+                        </div>
+                        <div class="tab_content" id="top-news-recruit_content">
+                            <div class="tab_content_description">
+                                <p class="c-txtsp">デザインの内容がここに入ります</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* 水城市について */}
+                    <AboutMinagi />
+                </div>
             </div>
         </div>
     )

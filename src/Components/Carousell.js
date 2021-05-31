@@ -4,6 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import img1 from './CarouselImg/1.png'
 import img2 from './CarouselImg/2.png'
 import img3 from './CarouselImg/3.png'
+import img4 from './CarouselImg/4.png'
 
 export default function Carousell (props) {
 
@@ -26,6 +27,9 @@ export default function Carousell (props) {
                 </div>
                 <div>
                     <img src={img3} style={{maxHeight: 300, maxWidth: 400}} />
+                </div>
+                <div>
+                    <img src={img4} style={{maxHeight: 300, maxWidth: 400}} />
                 </div>
             </Carousel>
         </div>

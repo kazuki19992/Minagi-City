@@ -37,21 +37,6 @@ export default function AboutMinagi (props) {
                 </div>
             </div>
 
-            <div class="Top-Minagi-Data-Box">
-                <div class="box-title">市の鳥、市の花、市の木</div>
-                <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-                    <div>
-                        <img src={Minagi} width="200" />
-                    </div>
-                    <div className="Minagi-Symboldata">
-                        <p className="title">市の鳥: 白鳥</p>
-                        <p className="since">2021年5月29日 制定</p>
-                        <p className="detail">
-                            毎年冬になると我が市へ訪れる白鳥。
-                        </p>
-                    </div>
-                </div>
-            </div>
         </div>
 
     )
