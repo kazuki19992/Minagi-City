@@ -87,11 +87,14 @@ export default function Top (props) {
     }
 
     const contentsLink = []
-    for(const data of contents[genre]){
-        contentsLink.push(<Link to={data.url} className="contents-btn">{data.name}</Link>)
+    if(!contents[genre][0].length){
+        contentsLink.push(<p style={{fontWeight: 'bold', fontSize: '15px', marginTop: '5em'}}>コンテンツはありません</p>)
+    }else{
+        for(const data of contents[genre]){
+            contentsLink.push(<Link to={data.url} className="contents-btn">{data.name}</Link>)
+        }
     }
 
-    console.log(contents[genre])
 
     useEffect(() => {
     }, [])
