@@ -13,8 +13,6 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 
-import weatherJson from "./weatherJson.json"
-
 import "./Top.css"
 
 
@@ -27,20 +25,10 @@ export default function Top (props) {
         msg: "不要不急の外出は控えましょう！",
         detail: ["手洗い、うがいを忘れずに！睡眠時間を確保しましょう！"]
     }
-    // const [ emergencyWeather, updateWeather ] = useState({
-    //     mode: "weather",
-    //     title: "気象警報/注意報",
-    //     detail: ["大雨特別警報", "暴風特別警報", "大雪特別警報", "波浪特別警報", "高潮特別警報",
-    //             "暴風雪警報", "大雨警報", "洪水警報", "暴風警報", "大雪警報", "波浪警報", "高潮警報",
-    //             "大雨注意報", "大雪注意報", "風雪注意報", "雷注意報", "強風注意報", "波浪注意報", "融雪注意報",
-    //             "洪水注意報", "高潮注意報", "濃霧注意報", "乾燥注意報", "なだれ注意報", "低温注意報", "霜注意報", "着氷注意報", "着雪注意報"]
-    // })
     const [ emergencyWeather, updateWeather ] = useState({mode: "weather", title: "気象警報/注意報", detail: ['しばらくお待ちください...']})
 
     // 気象警報/注意報を取得する
-    // const url = 'https://buzzgis.com/api/bousai_api.php?lat=36.9547084&lon=140.9038235'
     const url = '/weather-api/'
-    // const url = 'https://drive.google.com/uc?id=1RD6u2ws-OF1qGkxa5tT8kJQBoW4KGmMQ'
 
     useEffect(() => {
         axios.get(url).then((res) => {
