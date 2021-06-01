@@ -38,7 +38,8 @@ export default function Top (props) {
     const [ emergencyWeather, updateWeather ] = useState({mode: "weather", title: "気象警報/注意報", detail: ['しばらくお待ちください...']})
 
     // 気象警報/注意報を取得する
-    const url = 'https://buzzgis.com/api/bousai_api.php?lat=36.9547084&lon=140.9038235'
+    // const url = 'https://buzzgis.com/api/bousai_api.php?lat=36.9547084&lon=140.9038235'
+    const url = '/weather-api/'
     // const url = 'https://drive.google.com/uc?id=1RD6u2ws-OF1qGkxa5tT8kJQBoW4KGmMQ'
 
     useEffect(() => {
