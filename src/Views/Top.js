@@ -23,9 +23,9 @@ export default function Top (props) {
 
     const emergencyCovid = {
         mode: "covid19",
-        title: "コロナウイルス流行中！",
+        title: "新型コロナウイルス流行中！",
         msg: "不要不急の外出は控えましょう！",
-        detail: ["発令期間: 5月15日から5月31日まで"]
+        detail: ["手洗い、うがいを忘れずに！睡眠時間を確保しましょう！"]
     }
     // const [ emergencyWeather, updateWeather ] = useState({
     //     mode: "weather",
@@ -75,7 +75,7 @@ export default function Top (props) {
         <div>
             <div className="top-content">
                 <div className="left-content">
-                    {/* <Emergency data={emergencyCovid}/> */}
+                    <Emergency data={emergencyCovid}/>
                     <Emergency data={emergencyWeather}/>
                 </div>
                 <div className="right-content">
