@@ -26,7 +26,7 @@ export default function ShortcutTop (props) {
                     </div>
                 </Link>
 
-                <Link to="/explorer/ゴミ" className="shortcutBtnLink">
+                <Link to="/explorer/ごみ・環境" className="shortcutBtnLink">
                     <div className="shortcutBtn">
                         <i class="fas fa-trash-alt fa-3x fa-fw"></i><br />
                         <p>ゴミについて知りたい</p>
