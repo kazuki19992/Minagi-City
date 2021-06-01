@@ -87,7 +87,8 @@ export default function Top (props) {
     }
 
     const contentsLink = []
-    if(!contents[genre][0].length){
+    console.log(Object.keys(contents[genre][0]))
+    if(!Object.keys(contents[genre][0]).length){
         contentsLink.push(<p style={{fontWeight: 'bold', fontSize: '15px', marginTop: '5em'}}>コンテンツはありません</p>)
     }else{
         for(const data of contents[genre]){
