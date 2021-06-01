@@ -43,7 +43,7 @@ export default function Top (props) {
                             name: "転入・転居後の各種証明書について",
                             url: '#'
                         }],
-        "ゴミ":         [{
+        "ごみ・環境":         [{
                             name: "ごみカレンダー・ごみの分別",
                             url: '#'
                         },{
@@ -87,7 +87,6 @@ export default function Top (props) {
     }
 
     const contentsLink = []
-    console.log(Object.keys(contents[genre][0]))
     if(!Object.keys(contents[genre][0]).length){
         contentsLink.push(<p style={{fontWeight: 'bold', fontSize: '15px', marginTop: '5em'}}>コンテンツはありません</p>)
     }else{
