@@ -1,0 +1,10 @@
+[[redirects]]
+from = "/weather-api/*"
+to = "https://buzzgis.com/api/bousai_api.php?lat=36.9547084&lon=140.9038235"
+status = 200
+force = false
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
+force = false
