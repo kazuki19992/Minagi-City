@@ -32,7 +32,7 @@ export default function Header (props) {
                 <nav className="pc-nav">
                     <ul>
                         <li><Link to="#">ニュース</Link></li>
-                        <li><Link to="#">手続き</Link></li>
+                        <li><Link to="/explorer/手続き">手続き</Link></li>
                         <li><Link to="#">くらし</Link></li>
                         <li><Link to="#">福祉・育児</Link></li>
                         <li><Link to="#">観光・文化</Link></li>

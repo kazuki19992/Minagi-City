@@ -88,7 +88,14 @@ export default function Top (props) {
         "結婚・離婚":     [{}],
         "お悔やみ":       [{}],
         "仕事":         [{}],
-        "介護・福祉":      [{}]
+        "介護・福祉":      [{}],
+        "手続き":[{
+                    name: '手続書類ダウンロード',
+                    url: '#'
+                },{
+                    name: 'みなぎオンライン支所',
+                    url: '/explorer/みなぎオンライン支所'
+                }]
     }
 
     const contentsLink = []
