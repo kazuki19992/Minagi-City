@@ -8,9 +8,11 @@ import "./Explorer.css"
 
 
 export default function Top (props) {
-    document.title = "記事一覧 - 水城市役所"
 
     const { genre } = useParams();
+
+    document.title = genre +" - 水城市役所"
+
 
     // これは仮のやつです
     const contents = {
