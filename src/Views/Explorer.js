@@ -78,6 +78,9 @@ export default function Top (props) {
                             name: "各種制度の申請をしたい",
                             url: '#'
                         },{
+                            name: "原付(125cc以下)のナンバー登録・変更",
+                            url: '#'
+                        },{
                             name: "来庁予約をとりたい",
                             url: '#'
                         }],
