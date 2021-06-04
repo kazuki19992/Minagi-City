@@ -11,7 +11,7 @@ export default function Top (props) {
 
     const { genre } = useParams();
 
-    document.title = genre +" - 水城市役所"
+    document.title = genre + " - 水城市役所"
 
 
     // これは仮のやつです
