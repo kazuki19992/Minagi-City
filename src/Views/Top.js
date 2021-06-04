@@ -21,9 +21,9 @@ export default function Top (props) {
 
     const emergencyCovid = {
         mode: "covid19",
-        title: "新型コロナウイルス流行中！",
-        msg: "不要不急の外出は控えましょう！",
-        detail: ["手洗い、うがいを忘れずに！睡眠時間を確保しましょう！"]
+        title: "福島県新型コロナウイルス感染症重点対策",
+        msg: "感染の再拡大を防止するため、以下の重点的な対策を行います。",
+        detail: ["1. 一人ひとり基本的な感染対策を徹底しましょう。", "2. 感染リスクの高い行動は控えましょう。", "対象期間: 6月01日(火) ～ 6月30日(水)"]
     }
     const [ emergencyWeather, updateWeather ] = useState({mode: "weather", title: "気象警報/注意報", detail: ['しばらくお待ちください...']})
 
