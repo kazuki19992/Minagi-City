@@ -1,7 +1,7 @@
 {
-	"name":				"",
-	"short_name":		"",
-	"description":		"",
+	"name":				"水城市役所",
+	"short_name":		"水城市",
+	"description":		"水城市役所公式HPです",
 	"start_url":		"/",
 	"display":			"standalone",
 	"orientation":		"any",
