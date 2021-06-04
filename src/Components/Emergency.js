@@ -53,12 +53,16 @@ export default function Emergency (props) {
             </div>
         )
     }else if(data.mode === "covid19"){
+        const msgList = []
+        for(const detail of data.detail){
+            msgList.push(<p>{detail}</p>)
+        }
         return(
             <div className="weather-warning-wrapper">
                 <p className="title"><i class="fas fa-virus fa-fw"></i> {data.title}</p>
                 <div className="contents">
                     <p className="msg">{data.msg}</p>
-                    <p>{data.detail}</p>
+                    {msgList}
                 </div>
             </div>
         )
