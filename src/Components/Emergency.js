@@ -57,15 +57,29 @@ export default function Emergency (props) {
         for(const detail of data.detail){
             msgList.push(<p>{detail}</p>)
         }
-        return(
-            <div className="weather-warning-wrapper">
-                <p className="title"><i class="fas fa-virus fa-fw"></i> {data.title}</p>
-                <div className="contents">
-                    <p className="msg">{data.msg}</p>
-                    {msgList}
+        if(props.Link){
+            return (
+                <a href={props.href} target="_blank" rel="noreferrer" style={{textDecoration: 'none'}}>
+                    <div className="weather-warning-wrapper">
+                        <p className="title"><i class="fas fa-virus fa-fw"></i> {data.title}</p>
+                        <div className="contents">
+                            <p className="msg">{data.msg}</p>
+                            {msgList}
+                        </div>
+                    </div>
+                </a>
+            )
+        }else{
+            return(
+                <div className="weather-warning-wrapper">
+                    <p className="title"><i class="fas fa-virus fa-fw"></i> {data.title}</p>
+                    <div className="contents">
+                        <p className="msg">{data.msg}</p>
+                        {msgList}
+                    </div>
                 </div>
-            </div>
-        )
+            )
+        }
     }
     return null
 }
