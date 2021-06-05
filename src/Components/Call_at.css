@@ -1,0 +1,23 @@
+/* お問い合わせボックス */
+.call-box {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    border: double 5px #4ec4d3;
+    margin-bottom: 1em;
+    color: #333;
+}
+.call-box > .call-title {
+    font-weight: bold;
+    font-size: 15pt;
+    padding-bottom: 10px;
+    border-bottom: solid 2px #4ec4d3;
+    margin-bottom: 10px;
+}
+.call-box > .call-Name {
+    font-weight: bold;
+    font-size: 13pt;
+    padding-bottom: 5px;
+}
+.call-box > .call-Address {
+    font-size: 10pt;
+}
