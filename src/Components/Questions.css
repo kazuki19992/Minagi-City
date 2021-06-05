@@ -1,0 +1,45 @@
+.questions-box {
+    border: 2px solid #4ec4d3;;
+    border-radius: 5px;
+}
+
+.questions-box > .questions-title {
+    background: #4ec4d3;;
+    color: #FFF;
+    text-align: center;
+    margin: 0;
+    padding: .5em 0;
+    position: relative;
+}
+.questions-box > .questions-title::after {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: calc( 50% - 10px );
+    border: 10px solid transparent;
+    border-top: 10px solid #4ec4d3;;
+    width: 0;
+    height: 0;
+}
+.questions-box > .inner {
+    padding: 1.5em 2em 1em;
+}
+.questions-box > .inner > div > .sendButton {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    color: #0195c2;
+    background: #ECECEC;
+    transition: .4s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22);
+}
+.questions-box > .inner > div > .sendButton:hover {
+    background: #0195c2;
+    color: white;
+}
+.questions-box > .inner > div > .sendButton:active {
+    box-shadow: inset 0 0 2px rgba(128, 128, 128, 0.1);
+    transform: translateY(2px);
+}
