@@ -63,7 +63,7 @@ export default function Top (props) {
         <div>
             <div className="top-content">
                 <div className="left-content">
-                    <Emergency data={emergencyCovid}/>
+                    <Emergency data={emergencyCovid} Link={true} href="https://www.pref.fukushima.lg.jp/uploaded/library/jutentaisaku.pdf"/>
                     <Emergency data={emergencyWeather}/>
                 </div>
                 <div className="right-content">
