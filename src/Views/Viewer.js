@@ -25,12 +25,22 @@ export default function Viewer (props) {
     const { articleId } = useParams();
 
 
-    let dataList,  title
+    let dataList, title
     useEffect(()=> {
         // 記事情報すべてを取得
         axios.get(process.env.PUBLIC_URL + '/static/markdown/files.json').then((res) => {
+
+            // 配列からデータ一覧を取得
             dataList = res.data[props.mode]
-            const articleData = dataList[articleId]
+
+            let articleData
+            for ( const data of dataList){
+                if(data.id === articleId){
+                    articleData = data
+                    break
+                }
+            }
+            console.log(articleData)
             title = articleData.title
 
             document.title = title + " - 水城市役所"
