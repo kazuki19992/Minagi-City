@@ -31,7 +31,7 @@ export default function Viewer (props) {
         axios.get(process.env.PUBLIC_URL + '/static/markdown/files.json').then((res) => {
 
             // 配列からデータ一覧を取得
-            dataList = res.data[props.mode]
+            dataList = res.data.articles
 
             let articleData
             for ( const data of dataList){

@@ -88,3 +88,18 @@ input[name="tab_item"] {
     background-color: #5ab4bd;
     color: #fff;
 }
+.top-newsbox .tab_content .tab_content_description .topicDatas {
+    display: flex;
+    color: #333;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    border-bottom: 3px dotted #5ab4bd;
+}
+.top-newsbox .tab_content .tab_content_description .topicDatas .topicTitle {
+    font-weight: bold;
+}
+.top-newsbox .tab_content .tab_content_description .topicDatas .topicTime {
+    font-size: 10px;
+}
+

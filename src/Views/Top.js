@@ -30,6 +30,7 @@ export default function Top (props) {
     // 気象警報/注意報を取得する
     const url = '/weather-api/'
 
+    const [topNewsJsx, updateTopNewsJsx] = useState(<p>データ取得中... しばらくお待ち下さい...</p>)
     useEffect(() => {
         axios.get(url).then((res) => {
             console.log('取得成功')
@@ -56,6 +57,28 @@ export default function Top (props) {
             }
 
             updateWeather(obj)
+        })
+
+        // データ取得(記事)
+        const datalistUrl = process.env.PUBLIC_URL + '/static/markdown/files.json'
+        axios.get(datalistUrl).then((res) => {
+            console.log(res.data)
+
+            const topNews = []
+            // 逆順に並び替える
+            for (const data of res.data.articles){
+                topNews.unshift(data)
+            }
+
+            const tmpTopNewsJsx = []
+            for (const tmp of topNews){
+                const tmpJsxUrl = '/articles/' + tmp.id
+                const tmpJsx = <Link to={tmpJsxUrl} style={{textDecoration: 'none'}}><li className='topicDatas'><span className='topicTitle'>{tmp.title}</span><span className='topicTime'>{tmp.time}</span></li></Link>
+
+                tmpTopNewsJsx.push(tmpJsx)
+            }
+
+            updateTopNewsJsx(tmpTopNewsJsx)
         })
     }, [])
 
@@ -89,25 +112,27 @@ export default function Top (props) {
                     <h2 className="sectionHeader">トピックス</h2>
                     <div className="top-newsbox">
                         <input id="top-news-latest" type="radio" name="tab_item" checked />
-                        <label class="tab_item" for="top-news-latest">最新のトピックス</label>
+                        <label className="tab_item" for="top-news-latest">最新のトピックス</label>
                         <input id="top-news-pv" type="radio" name="tab_item" />
-                        <label class="tab_item" for="top-news-pv">よく見られているページ</label>
+                        <label className="tab_item" for="top-news-pv">よく見られているページ</label>
                         <input id="top-news-recruit" type="radio" name="tab_item" />
-                        <label class="tab_item" for="top-news-recruit">募集情報</label>
+                        <label className="tab_item" for="top-news-recruit">募集情報</label>
 
-                        <div class="tab_content" id="top-news-latest_content">
-                            <div class="tab_content_description">
-                                <p class="c-txtsp">コンテンツはありません</p>
+                        <div className="tab_content" id="top-news-latest_content">
+                            <div className="tab_content_description">
+                                <ul style={{listStyle: 'none'}}>
+                                    {topNewsJsx}
+                                </ul>
                             </div>
                         </div>
-                        <div class="tab_content" id="top-news-pv_content">
-                            <div class="tab_content_description">
-                                <p class="c-txtsp">よく見られているページはありません</p>
+                        <div className="tab_content" id="top-news-pv_content">
+                            <div className="tab_content_description">
+                                <p className="c-txtsp">よく見られているページはありません</p>
                             </div>
                         </div>
-                        <div class="tab_content" id="top-news-recruit_content">
-                            <div class="tab_content_description">
-                                <p class="c-txtsp">募集情報はありません</p>
+                        <div className="tab_content" id="top-news-recruit_content">
+                            <div className="tab_content_description">
+                                <p className="c-txtsp">募集情報はありません</p>
                             </div>
                         </div>
                     </div>
