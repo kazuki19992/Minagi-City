@@ -101,7 +101,7 @@ export default function Top (props) {
                     <h2 className="sectionHeader">リンク集</h2>
                     <div className="topLinkBox" >
                         <Link to="#"><img src={picLink1} className="banner" /></Link>
-                        <Link to="#"><img src={picLink2} className="banner" /></Link>
+                        <Link to="/explorer/ふるさと納税"><img src={picLink2} className="banner" /></Link>
                         <Link to="#"><img src={picLink3} className="banner" /></Link>
                         <a href="https://fukushima-covid19.web.app/" target="__brank"><img src={picLink4} className="banner" /></a>
                         <a href="https://www.pref.fukushima.lg.jp/" target="__brank"><img src={picLink5} className="banner" /></a>

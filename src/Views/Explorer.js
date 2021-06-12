@@ -143,7 +143,14 @@ export default function Top (props) {
                 },{
                     name: 'みなぎオンライン支所',
                     url: '/explorer/みなぎオンライン支所'
-                }]
+                }],
+        "ふるさと納税":   [{
+                            name: 'ふるさと納税の返礼品一覧',
+                            url: '/articles/000002'
+                        },{
+                            name: 'ふるさと納税とは',
+                            url: '#'
+                        }]
     }
 
     const contentsLink = []
