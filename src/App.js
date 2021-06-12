@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
+import ScrollToTop from './Components/ScrollToTop';
 import Header from './Components/Header'
 import Footer from './Components/Footer'
 
@@ -13,6 +14,7 @@ function App() {
   return (
     <div className="App">
       <Router basename={process.env.PUBLIC_URL}>
+        <ScrollToTop />
         <Header />
         <div className="app-container">
           <div className="contents-wrapper">
